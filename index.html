@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcade Vault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Arcade Vault</h1>
+    <input id="search" type="search" placeholder="Search games (e.g., driving, retro, ovo)..." />
+    <div class="tagbar" id="tagbar"></div>
+  </header>
+
+  <main id="grid" class="grid"></main>
+
+  <!-- Modal play overlay -->
+  <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
+    <div class="player">
+      <button id="close" class="close" aria-label="Close">×</button>
+      <iframe id="frame" src="" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe>
+      <div class="meta" id="meta"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Built by Muhammad • Free & fast • No logins</span>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
