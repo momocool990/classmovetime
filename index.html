@@ -7,20 +7,46 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <h1>Arcade Vault</h1>
-    <input id="search" type="search" placeholder="Search games (e.g., driving, ovo, arcade)..." />
+  <nav class="navbar">
+    <div class="brand">Arcade Vault</div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#" aria-disabled="true">Proxy</a>
+      <a href="#" aria-disabled="true">Movies</a>
+      <a href="#" aria-disabled="true">Music</a>
+      <a href="#" aria-disabled="true">Settings</a>
+      <a href="#" aria-disabled="true">Discord</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search games (e.g., slope, tetris, ovo)" />
+    </div>
     <div class="tagbar" id="tagbar"></div>
   </header>
 
   <main id="grid" class="grid"></main>
 
   <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
-    <div class="player">
-      <button id="close" class="close" aria-label="Close">×</button>
-      <button id="fullscreen" class="fullscreen" aria-label="Fullscreen">⛶</button>
-      <iframe id="frame" src="" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe>
-      <div class="meta" id="meta"></div>
+    <div class="player" id="player">
+      <div class="player-bar">
+        <div class="title" id="playerTitle">Playing</div>
+        <div class="actions">
+          <button id="fullscreen" class="btn" aria-label="Fullscreen">⛶</button>
+          <button id="close" class="btn" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div class="player-body">
+        <iframe
+          id="frame"
+          src=""
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          allow="fullscreen; autoplay; gamepad; cross-origin-isolated"
+        ></iframe>
+      </div>
+      <div class="player-meta" id="meta"></div>
     </div>
   </div>
 
