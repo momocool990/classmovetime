@@ -9,16 +9,16 @@
 <body>
   <header class="topbar">
     <h1>Arcade Vault</h1>
-    <input id="search" type="search" placeholder="Search games (e.g., driving, retro, ovo)..." />
+    <input id="search" type="search" placeholder="Search games (e.g., driving, ovo, arcade)..." />
     <div class="tagbar" id="tagbar"></div>
   </header>
 
   <main id="grid" class="grid"></main>
 
-  <!-- Modal play overlay -->
   <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
     <div class="player">
       <button id="close" class="close" aria-label="Close">×</button>
+      <button id="fullscreen" class="fullscreen" aria-label="Fullscreen">⛶</button>
       <iframe id="frame" src="" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe>
       <div class="meta" id="meta"></div>
     </div>
