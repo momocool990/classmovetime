@@ -28,27 +28,28 @@
 
   <main id="grid" class="grid"></main>
 
-  <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
-    <div class="player" id="player">
-      <div class="player-bar">
-        <div class="title" id="playerTitle">Playing</div>
-        <div class="actions">
-          <button id="fullscreen" class="btn" aria-label="Fullscreen">⛶</button>
-          <button id="close" class="btn" aria-label="Close">×</button>
-        </div>
+ <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
+  <div class="player" id="player">
+    <div class="player-bar">
+      <div class="title" id="playerTitle">Playing</div>
+      <div class="actions">
+        <button id="fullscreen" class="btn" aria-label="Fullscreen">⛶</button>
+        <button id="close" class="btn" aria-label="Close">×</button>
       </div>
-      <div class="player-body">
-        <iframe
-          id="frame"
-          src=""
-          loading="lazy"
-          referrerpolicy="no-referrer"
-          allow="fullscreen; autoplay; gamepad; cross-origin-isolated"
-        ></iframe>
-      </div>
-      <div class="player-meta" id="meta"></div>
     </div>
+    <div class="player-body">
+      <iframe
+        id="frame"
+        src=""
+        loading="lazy"
+        referrerpolicy="no-referrer"
+        allow="fullscreen; autoplay; gamepad"
+      ></iframe>
+    </div>
+    <div class="player-meta" id="meta"></div>
   </div>
+</div>
+
 
   <footer class="footer">
     <span>Built by Muhammad • Free & fast • No logins</span>
