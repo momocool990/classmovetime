@@ -13,18 +13,13 @@ let games = [];
 let activeTags = new Set();
 
 async function loadGames() {
-  try {
-    const res = await fetch('refer.json');
-    games = await res.json();
-    renderGrid();
-    renderTags();
-  } catch (e) {
-    console.error('Failed to load refer.json', e);
-  }
+  const res = await fetch('refer.json');
+  games = await res.json();
+  renderGrid();
+  renderTags();
 }
 loadGames();
 
-/* Rendering */
 function renderGrid() {
   const q = search.value.trim().toLowerCase();
   const filtered = games.filter(g => {
@@ -78,7 +73,6 @@ function renderTags() {
   });
 }
 
-/* Player */
 function openGame(id) {
   const g = games.find(x => x.id === id);
   if (!g) return;
@@ -94,21 +88,4 @@ function closeOverlay() {
 }
 
 function enterFullscreen() {
-  // Fullscreen the player container instead of the iframe
-  if (player.requestFullscreen) {
-    player.requestFullscreen();
-  } else if (player.webkitRequestFullscreen) {
-    player.webkitRequestFullscreen();
-  } else if (player.msRequestFullscreen) {
-    player.msRequestFullscreen();
-  }
-}
-
-closeBtn.addEventListener('click', closeOverlay);
-fullscreenBtn.addEventListener('click', enterFullscreen);
-search.addEventListener('input', renderGrid);
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-    closeOverlay();
-  }
-});
+  if (player.request
