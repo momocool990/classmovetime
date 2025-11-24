@@ -1,26 +1,42 @@
 [
   {
-    "id": "drive-mad",
-    "title": "Drive Mad",
-    "thumb": "images/drive-mad.jpg",
-    "tags": ["driving", "physics", "arcade"],
-    "description": "Physics driving chaos. Balance speed and control.",
-    "iframeSrc": "https://example-embeds.com/games/drive-mad/index.html"
-  },
-  {
     "id": "ovo",
     "title": "OvO",
     "thumb": "images/ovo.jpg",
     "tags": ["platformer", "speedrun", "skill"],
-    "description": "Momentum-based platforming with tight controls.",
-    "iframeSrc": "https://example-embeds.com/games/ovo/index.html"
+    "description": "Momentum-based platformer with tight controls.",
+    "iframeSrc": "games/ovo/index.html"
   },
   {
-    "id": "crossy-clone",
-    "title": "Crossy Road (Web Clone)",
+    "id": "drive-mad",
+    "title": "Drive Mad",
+    "thumb": "images/drive-mad.jpg",
+    "tags": ["driving", "physics", "arcade"],
+    "description": "Balance speed and control in this physics driving chaos.",
+    "iframeSrc": "games/drive-mad/index.html"
+  },
+  {
+    "id": "crossy-road",
+    "title": "Crossy Road Clone",
     "thumb": "images/crossy.jpg",
-    "tags": ["endless", "3d", "timing"],
-    "description": "Hop across traffic and rivers. Built for the web.",
-    "iframeSrc": "https://your-domain.com/games/crossy/index.html"
+    "tags": ["endless", "timing", "3d"],
+    "description": "Hop across traffic and rivers in this endless arcade.",
+    "iframeSrc": "games/crossy/index.html"
+  },
+  {
+    "id": "snake",
+    "title": "Classic Snake",
+    "thumb": "images/snake.jpg",
+    "tags": ["retro", "arcade", "endless"],
+    "description": "Eat apples, grow longer, and avoid hitting yourself.",
+    "iframeSrc": "games/snake/index.html"
+  },
+  {
+    "id": "flappy",
+    "title": "Flappy Bird Clone",
+    "thumb": "images/flappy.jpg",
+    "tags": ["endless", "timing", "arcade"],
+    "description": "Tap to fly through pipes in this addictive endless challenge.",
+    "iframeSrc": "games/flappy/index.html"
   }
 ]
