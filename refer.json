@@ -1,0 +1,26 @@
+[
+  {
+    "id": "drive-mad",
+    "title": "Drive Mad",
+    "thumb": "images/drive-mad.jpg",
+    "tags": ["driving", "physics", "arcade"],
+    "description": "Physics driving chaos. Balance speed and control.",
+    "iframeSrc": "https://example-embeds.com/games/drive-mad/index.html"
+  },
+  {
+    "id": "ovo",
+    "title": "OvO",
+    "thumb": "images/ovo.jpg",
+    "tags": ["platformer", "speedrun", "skill"],
+    "description": "Momentum-based platforming with tight controls.",
+    "iframeSrc": "https://example-embeds.com/games/ovo/index.html"
+  },
+  {
+    "id": "crossy-clone",
+    "title": "Crossy Road (Web Clone)",
+    "thumb": "images/crossy.jpg",
+    "tags": ["endless", "3d", "timing"],
+    "description": "Hop across traffic and rivers. Built for the web.",
+    "iframeSrc": "https://your-domain.com/games/crossy/index.html"
+  }
+]
