@@ -5,7 +5,8 @@
     "thumb": "images/ovo.jpg",
     "tags": ["platformer", "speedrun", "skill"],
     "description": "Momentum-based platformer with tight controls.",
-    "iframeSrc": "https://ovo.drakeerv.com/"
+    "iframeSrc": "https://ovo.drakeerv.com/",
+    "badge": "New"
   },
   {
     "id": "drive-mad",
@@ -17,10 +18,10 @@
   },
   {
     "id": "crossy-road",
-    "title": "Crossy Road Clone",
+    "title": "Crossy Road",
     "thumb": "images/crossy.jpg",
     "tags": ["endless", "timing", "3d"],
-    "description": "Hop across traffic and rivers in this endless arcade.",
+    "description": "Guide your character across traffic and rivers without getting squished.",
     "iframeSrc": "https://larnelle15.github.io/Crossy-road/"
   }
 ]
